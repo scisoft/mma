@@ -1,0 +1,15 @@
+project(CyPy)
+enable_language(Fortran)
+find_package(Python REQUIRED)
+include(UseCython)
+
+add_library(fwork SHARED
+    fwork.f90
+    fwork.h
+    )
+cython_add_module(pywork 
+    pywork.pyx
+    )
+target_link_libraries(pywork
+    fwork
+    )

@@ -1,7 +1,7 @@
 .. role:: cover
 
 ============================================
-:cover:`Modular mixed language development`
+:cover:`Mixed Martial Arts`
 ============================================
 
 .. class:: cover
@@ -38,7 +38,7 @@ How
     * init()
     * step()
     * finalize()
-    * + accessors
+    * \+ accessors
 * Couple either directly or via Cython
 * Use CMake to build and link
 
@@ -59,21 +59,48 @@ Fortran calling C
 C calling Fortran
 -------------------------------------------
 .. code-block:: Fortran
+    :include: code/fwork.f90
+
+.. code-block:: C
     :include: code/fcall.c
 
 C++
 -------------------------------------------
-* C++ cannot easily be directly coupled:
-    * Name mangling
+C++ cannot be directly linked due to name mangling.
 
+.. code-block:: C++
+    :include: code/classy.h
 
 Cython
 -------------------------------------------
-* Compile Python to C
+* Compile Python to C!
     * Speedup Pyhton
     * Call external C/C++ functions directly
     * Pass arrays via numpy
     * Use CMake!
+
+* https://github.com/bakerjonas/python-tutorials/tree/master/Cython
+
+Cython for speed
+------------------------------------------
+.. code-block:: cython
+    :include: code/cyspeed.pyx
+
+Cython calling C
+------------------------------------------
+.. code-block:: cython
+    :include: code/cyspeed.pyx
+
+Calling Cython from Python
+------------------------------------------
+.. code-block:: cython
+    :include: code/cypy.py
+
+Cython CMake
+------------------------------------------
+.. code-block:: cmake
+    :include: code/CMakeLists.cython
+
 
 Haskell
 -------------------------------------------
