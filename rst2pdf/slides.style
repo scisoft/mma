@@ -45,7 +45,7 @@
         showHeader : true
         showFooter : true
         defaultFooter : ###Page###
-        background : img/background.png
+        #background : img/background.png
 
     twoColumn:
         frames: []

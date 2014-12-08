@@ -89,7 +89,7 @@ Cython for speed
 Cython calling C
 ------------------------------------------
 .. code-block:: cython
-    :include: code/cyspeed.pyx
+    :include: code/pywork.pyx
 
 Calling Cython from Python
 ------------------------------------------
